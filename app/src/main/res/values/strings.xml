@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FundatecHeroes2</string>
+    <string name="senha">senha</string>
+    <string name="novo">Novo por aqui?</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
 </resources>
