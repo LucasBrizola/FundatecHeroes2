@@ -12,8 +12,7 @@ class LoginViewModel : ViewModel() {
         if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
             state.value = ViewState.ShowErrorNull
         }
-
-        if (!email!!.contains("@")) {
+        else if (!email!!.contains("@")) {
             state.value = ViewState.ShowErrorEmail
         } else
             state.value = ViewState.ShowSuccess

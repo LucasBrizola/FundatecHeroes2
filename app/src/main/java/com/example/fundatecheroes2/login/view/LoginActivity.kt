@@ -3,14 +3,13 @@ package com.example.fundatecheroes2.login.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import com.example.fundatecheroes.login.view.presentation.LoginViewModel
 import com.example.fundatecheroes.login.view.presentation.ViewState
 import com.example.fundatecheroes2.databinding.ActivityLoginBinding
 import com.example.fundatecheroes2.home.HomeActivity
 import com.example.fundatecheroes2.profile.view.ProfileActivity
-import com.fundatec.components.test
+import com.fundatec.components.showSnackbar
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,8 +26,8 @@ class LoginActivity : AppCompatActivity() {
         viewModel.viewState.observe(this) { state ->
             when (state) {
                 is
-                ViewState.ShowErrorEmail -> toastEmailInvalido()
-                ViewState.ShowErrorNull -> toastCamposNull()
+                ViewState.ShowErrorEmail -> showSnackbar(binding.root,"Email deve ser válido (ter um @).")
+                ViewState.ShowErrorNull -> showSnackbar(binding.root, "campos não podem ser vazios!")
                 ViewState.ShowSuccess -> avancarTela()
             }
         }
@@ -47,14 +46,6 @@ class LoginActivity : AppCompatActivity() {
                 password = binding.etSenha.text.toString(),
             )
         }
-    }
-
-    private fun toastEmailInvalido() {
-        Toast.makeText(this, "Email deve ser válido (ter um @).", Toast.LENGTH_LONG).show()
-    }
-
-    private fun toastCamposNull() {
-        Toast.makeText(this, "campos não podem ser vazios", Toast.LENGTH_LONG).show()
     }
 
     private fun avancarTela() {
