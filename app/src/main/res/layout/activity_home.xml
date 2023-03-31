@@ -16,33 +16,44 @@
             android:elevation="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:title="Home"
-            app:titleTextColor="@color/red" />
+            app:titleTextColor="@color/white" />
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_home"
+            android:id="@+id/tl_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/tb_navigation" />
+            app:layout_constraintTop_toBottomOf="@+id/tb_navigation"
+            />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/vp_home"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tl_home" />
+            app:layout_constraintTop_toBottomOf="@+id/tl_login" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_novo_personagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/plusblue"
+            android:contentDescription="new character"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn_bottom_navigation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|bottom"
-            android:src="@drawable/plus_svgrepo_com"
+            android:src="@drawable/plusred"
             android:contentDescription="bottom navigation"
             android:layout_margin="16dp"
-            android:textAllCaps="false"
-            android:textColor="@color/blue"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
