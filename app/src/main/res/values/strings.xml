@@ -4,6 +4,10 @@
     <string name="novo">Novo por aqui?</string>
     <string name="login">Login</string>
     <string name="email">email</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="salvar">salvar</string>
+    <string name="aniversario_do_heroi">aniversário do herói</string>
+    <string name="idade_do_heroi">idade do herói</string>
+    <string name="descricao_do_heroi">descrição do herói</string>
+    <string name="url_do_heroi">url do herói</string>
+    <string name="nome_do_heroi">nome do herói</string>
 </resources>

@@ -4,10 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.example.fundatecheroes.login.view.presentation.LoginViewModel
-import com.example.fundatecheroes.login.view.presentation.ViewState
 import com.example.fundatecheroes2.databinding.ActivityLoginBinding
 import com.example.fundatecheroes2.home.HomeActivity
+import com.example.fundatecheroes2.login.view.presentation.LoginViewModel
+import com.example.fundatecheroes2.login.view.presentation.ViewState
 import com.example.fundatecheroes2.profile.view.ProfileActivity
 import com.fundatec.components.showSnackbar
 
