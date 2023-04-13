@@ -19,7 +19,7 @@
             app:titleTextColor="@color/white" />
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_login"
+            android:id="@+id/tl_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/tb_navigation"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tl_login" />
+            app:layout_constraintTop_toBottomOf="@+id/tl_home" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn_novo_personagem"

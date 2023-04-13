@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.example.fundatecheroes2.databinding.ActivityLoginBinding
-import com.example.fundatecheroes2.home.HomeActivity
+import com.example.fundatecheroes2.home.view.HomeActivity
 import com.example.fundatecheroes2.login.view.presentation.LoginViewModel
 import com.example.fundatecheroes2.login.view.presentation.ViewState
 import com.example.fundatecheroes2.profile.view.ProfileActivity

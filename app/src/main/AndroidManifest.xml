@@ -12,23 +12,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="com.example.fundatecheroes2.App"
+        android:name="App"
         android:theme="@style/Theme.FundatecHeroes2"
         tools:targetApi="31">
         <activity
             android:name=".character.view.NewCharacterActivity"
             android:exported="false"
-            android:parentActivityName=".home.HomeActivity"/>
+            android:parentActivityName=".home.view.HomeActivity"/>
         <activity
             android:name=".navigation.BottomNavigationActivity"
             android:exported="false"
-            android:parentActivityName=".home.HomeActivity"/>
+            android:parentActivityName=".home.view.HomeActivity"/>
         <activity
             android:name=".profile.view.ProfileActivity"
             android:exported="false"
             android:parentActivityName=".login.view.LoginActivity"/>
         <activity
-            android:name=".home.HomeActivity"
+            android:name=".home.view.HomeActivity"
             android:exported="false"
             android:parentActivityName=".login.view.LoginActivity" />
         <activity
