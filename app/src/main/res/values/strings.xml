@@ -10,4 +10,6 @@
     <string name="descricao_do_heroi">descrição do herói</string>
     <string name="url_do_heroi">url do herói</string>
     <string name="nome_do_heroi">nome do herói</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
